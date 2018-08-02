@@ -5,6 +5,7 @@ declare -a versions=(
         "7.2"
         "7.1"
         "7.0"
+        "5.6"
     )
 
 basePath="generated"
