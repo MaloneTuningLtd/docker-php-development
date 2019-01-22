@@ -27,6 +27,7 @@ RUN apt-get update && apt-get install -y \
   libsnmp-dev \
   libpcre3-dev \
   libtidy-dev \
+  libzip-dev \
   openssh-client
 
 # Install PHP Extensions
@@ -39,7 +40,7 @@ RUN docker-php-ext-install \
   bz2 \
   opcache\
 && pecl install \
-  xdebug \
+  xdebug-2.7.0beta1 \
 && docker-php-ext-enable xdebug
 
 # Memory Limit

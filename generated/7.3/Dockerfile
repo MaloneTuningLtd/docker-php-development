@@ -1,6 +1,6 @@
 # This is an auto-generated file, do not edit.
 # See <root>/Dockerfile.template
-FROM php:7.2
+FROM php:7.3
 
 LABEL description="PHP configured for a development environment" \
       maintainer="Malone Tuning <web@malonetuning.com>"

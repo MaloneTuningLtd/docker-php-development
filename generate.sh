@@ -2,6 +2,7 @@
 
 declare -a versions=(
         "latest"
+        "7.3"
         "7.2"
         "7.1"
         "7.0"
