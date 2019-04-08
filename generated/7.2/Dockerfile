@@ -28,7 +28,8 @@ RUN apt-get update && apt-get install -y \
   libpcre3-dev \
   libtidy-dev \
   libzip-dev \
-  openssh-client
+  openssh-client \
+  unzip
 
 # Install PHP Extensions
 # pdo_mysql, intl, zip, opcache, and xdebug
