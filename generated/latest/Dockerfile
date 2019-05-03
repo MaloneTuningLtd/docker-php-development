@@ -57,3 +57,6 @@ ENV COMPOSER_ALLOW_SUPERUSER 1
 
 # Install Composer
 RUN curl --silent --show-error https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+# Install prestissimo for parallel composer installs
+RUN composer global require hirak/prestissimo
