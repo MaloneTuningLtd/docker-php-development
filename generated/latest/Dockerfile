@@ -35,6 +35,7 @@ RUN apt-get update && apt-get install -y \
 # pdo_mysql, intl, zip, opcache, and xdebug
 RUN docker-php-ext-install \
   pdo_mysql \
+  pdo_pgsql \
   intl \
   gd \
   zip \
