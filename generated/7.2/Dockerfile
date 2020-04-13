@@ -41,10 +41,12 @@ RUN docker-php-ext-install \
   zip \
   bz2 \
   pcntl \
-  opcache\
+  opcache \
 && pecl install \
   xdebug \
-&& docker-php-ext-enable xdebug
+  redis \
+&& docker-php-ext-enable xdebug \
+&& echo "extension=redis.so" > /usr/local/etc/php/conf.d/redis.ini
 
 # Memory Limit
 RUN echo "memory_limit=-1" > $PHP_INI_DIR/conf.d/memory-limit.ini
