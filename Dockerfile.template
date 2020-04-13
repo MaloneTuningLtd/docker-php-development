@@ -39,7 +39,7 @@ RUN docker-php-ext-install \
   zip \
   bz2 \
   pcntl \
-  opcache\
+  opcache \
 && pecl install \
   xdebug \
 && docker-php-ext-enable xdebug
