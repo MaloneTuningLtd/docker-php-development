@@ -2,6 +2,7 @@
 
 declare -a versions=(
         "latest"
+        "8.0"
         "7.4"
         "7.3"
         "7.2"
@@ -37,6 +38,7 @@ do
     # generate new Dockerfile
     cat HEADER > "$dockerFilePath"
     cat Dockerfile.template | sed -e "s/\$VERSION/$version/g" >> "$dockerFilePath"
+    cp wait-for-it.sh "$versionFolder/wait-for-it.sh"
 
     echo "Generated $version"
     echo "docker build -t maloneweb/docker-php-development:$version generated/$version &" >> "$buildScriptPath"
