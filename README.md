@@ -1,3 +1,9 @@
+# No longer updated on DockerHub
+
+Due to recent [Docker Hub autobuild changes](https://www.docker.com/blog/changes-to-docker-hub-autobuilds/), these containers will no longer be updated on Docker Hub as of June 18th.
+
+-----
+
 # PHP Development Dockerfile
 
 ## Features
